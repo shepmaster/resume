@@ -1,0 +1,154 @@
+* Info
+Jake Goulding
+jake.goulding@gmail.com
+jakegoulding.com
+github.com/shepmaster
+@jakegoulding
+
+* Education
+Georgia Institute of Technology - 2005
+Bachelors in Computer Science
+Bachelors in Electrical Engineering
+Highest Honors
+
+* Employment
+
+International Business Machines Corporation (IBM) October 2005 - Present
+(IBM acquired Vivisimo, Inc in 2012)
+Pittsburgh, PA
+
+** Major Projects
+*** Spelling corrector
+One of my first large projects at Vivisimo, the spelling corrector
+leveraged data collected for the search engine to produce
+automatically customized spelling suggestions. These suggestions were
+more useful than a static dictionary could provide. Subsequent
+revisions increased the query-time and creation-time performance.
+
+*** Autocomplete
+While many end-users know what they want to search for, others want
+more guidance or are more interested in browsing existing search
+results. Automatically suggesting high-value, frequently occurring
+words and phrases can help these users find more relevant results.
+
+TODO short
+
+*** Efficient paging
+The Velocity product allows querying multiple sources of data which
+are then sorted together. This means that you can not simply request a
+count of results and start offset from each source. Efficient paging
+helps by requesting the bare minimum of data required to order the
+results, then requesting the complete set of data when the user needs
+to view that set of results.
+
+*** Thai segmenter
+The Velocity search engine requires the ability to distinguish
+individual words in a stream of text. Languages such as Thai do not
+have natural word breaks (like spaces in English), and require extra
+linguistic processing. Instead of creating a simple segmenter, as
+originally envisioned, I researched and evaluated open source
+implementations and eventually integrated a solution into our product.
+
+*** Re-architect collections
+Originally, crawling, indexing and serving of results were each done
+as separate batch jobs, making updates to the search index difficult
+and time-consuming. These phases were rearranged to allow for online
+updates; services that would previously run and exit were repurposed
+to run continuously. I worked on the framework that would ensure these
+services would start and stop as appropriate, as well as managed
+communication between them and the administrative tool.
+
+*** Windows 64-bit port
+TODO Ugly!
+
+As more of the search index is available in RAM, query time
+performance is improved. 64-bit allows more memory
+over 32. Approximately half of our customers used Windows; while these
+customers were stuck with 32-bit versions of the software, they had to
+deal with onerous restrictions. I updated our build scripts to
+correctly recognize and support Windows 64-bit, and updated both our
+support libraries and our code to operate correctly in the new
+environment.
+
+*** Collection broker
+A large OEM partner wanted to reduce costs by using a single machine
+to serve results from many search collections, greater than the CPU
+and memory resources of that computer. I created a service that would
+monitor the memory usage of the entire machine, as well as the status
+of each individual search collection, and intelligently decide when
+collections could be taken offline or when to deny new incoming
+requests.
+
+*** Rich preview
+When searching for a specific document, many users identify the
+correct result by the visual layout of the document. To better support
+these users, we added the ability to capture versions of the document
+that used HTML and images to replicate the appearance of the original
+document.
+
+*** Index compression
+Search collections can take up a large amount of disk space, but the
+indexed data has a high level of redundancy. I added transparent
+compression to the indexed data, which also involved refactoring
+existing reading and writing functionality first.
+
+TODO short
+
+*** SOAP / REST API
+The Velocity search engine originally operated on a pull model, which
+was well-suited for crawling websites. New customers required the
+ability to control how and when data was indexed by pushing data into
+the system. API functions were created to exposed the major
+functionality of managing, adding data to, and querying search
+collections. SOAP and REST endpoints were created to expose these API
+functions.
+
+*** Application Builder
+The Velocity product provided a large amount of functionality, but
+each customer needed to configure and customize it to suit thier
+needs. In this way, Velocity was similar to a database or any other
+underlying piece of technology. In order to provide more immediate
+benefit, we created a new application built on top of Velocity that
+targetted a specific market niche.
+
+* Passions
+Automated testing
+Test-driven design
+Agile methodologies
+Version control (git)
+Build systems (Make, CMake)
+
+* Open source contributions
+git
+Ruby
+JRuby
+cURL
+glib
+RSpec
+Capybara
+
+* Talks
+DON'T PANIC: The Hitchhiker's Guide to Debugging
+Jointly presented with Carol Nichols
+Codemash, 2013
+
+Structure of RSpec tests
+Pittsburgh Ruby, 2013
+http://jakegoulding.com/presentations/rspec-structure/
+
+* Tutoring
+TODO
+
+* Programming languages
+** Extremely comfortable
+C
+Ruby
+Java
+Bash
+XSLT
+
+** Comfortable
+C++, JavaScript
+
+** Extremely interested in
+Clojure, Go, Objective-C
