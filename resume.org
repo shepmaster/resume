@@ -149,11 +149,7 @@ TODO
 
 * Programming languages
 ** Extremely comfortable
-C
-Ruby
-Java
-Bash
-XSLT
+C, Ruby, Java, Bash, XSLT
 
 ** Comfortable
 C++, JavaScript
