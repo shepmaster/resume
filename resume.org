@@ -139,6 +139,10 @@ Structure of RSpec tests
 Pittsburgh Ruby, 2013
 http://jakegoulding.com/presentations/rspec-structure/
 
+Experiment with story splitting
+Pittsburgh Agile, 2011
+http://www.meetup.com/PittsburghAgile/events/33441392/
+
 * Tutoring
 TODO
 
