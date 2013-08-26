@@ -156,4 +156,4 @@ C, Ruby, Java, Bash, XSLT
 C++, JavaScript
 
 ** Extremely interested in
-Clojure, Go, Objective-C
+Clojure, Go, Rust, Objective-C
