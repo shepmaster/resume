@@ -144,7 +144,9 @@ Pittsburgh Agile, 2011
 http://www.meetup.com/PittsburghAgile/events/33441392/
 
 * Tutoring
-TODO
+I always want to learn more, and teaching others is an amazing way of
+solidifying my own knowledge. To this end, I tutor people new to Ruby
+and Ruby on Rails.
 
 * Programming languages
 ** Extremely comfortable
