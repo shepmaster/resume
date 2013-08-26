@@ -116,6 +116,8 @@ Highest Honors
 Automated testing
 Test-driven design
 Agile methodologies
+Learning and teaching
+Open source contribution
 Version control (git)
 Build systems (Make, CMake)
 
