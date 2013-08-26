@@ -17,13 +17,13 @@ and a proprietary configuration language.
 
 ** Major Projects
 *** Spelling corrector
-One of my first large projects at Vivisimo, the spelling corrector
+Many spelling suggestions are based on a static dictionary that by
+necessity needs to be very general. To improve the quality and
+usefulness of suggestions, I created a spelling corrector that
 leveraged data collected for the search engine to produce
-automatically customized spelling suggestions. These suggestions were
-more useful than a static dictionary could provide. Subsequent
-revisions increased the query-time and creation-time performance.
-
-TODO: reference *I*
+automatically customized spelling suggestions. I also led small teams
+to increase the query-time and creation-time performance as well as
+reduce disk usage.
 
 *** Autocomplete
 While many end-users know what they want to search for, others want
@@ -57,19 +57,14 @@ that would ensure each component would start and stop as
 appropriate. I also managed the communication between the components
 and the administrative tool.
 
-TODO: re-review
-
 *** 64-bit Windows port
-TODO Ugly!
-
-As more of the search index is available in RAM, query time
-performance is improved. 64-bit allows more memory
-over 32. Approximately half of our customers used Windows; while these
-customers were stuck with 32-bit versions of the software, they had to
-deal with onerous restrictions. I updated our build scripts to
-correctly recognize and support 64-bit Windows, and updated both our
-support libraries and our code to operate correctly in the new
-environment.
+Query time performance greatly benefits from having most of the search
+index in RAM. Over Velocity's lifetime, 64-bit machines came into
+general use. While Velocity already supported 64-bit Linux,
+approximately half of our customers used Windows. I updated our build
+scripts to correctly recognize and support 64-bit Windows, and updated
+both our support libraries and our code to operate correctly in the
+new environment.
 
 *** Collection broker
 A large OEM partner wanted to reduce costs by using a single machine
@@ -93,8 +88,6 @@ Search collections can take up a large amount of disk space, but the
 indexed data has a high level of redundancy. I added transparent
 compression to the indexed data, which also involved refactoring
 existing reading and writing functionality first.
-
-TODO short
 
 *** SOAP / REST API
 The Velocity search engine originally operated on a pull model, which
